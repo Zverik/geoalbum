@@ -1,0 +1,68 @@
+body {
+    margin: 10px;
+    font-size: 10pt;
+    font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: normal;
+}
+
+#content {
+    width: 650px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+#maps {
+    margin-left: 680px;
+}
+
+#detailmap {
+    margin-top: 1em;
+    height: 350px;
+}
+
+#overviewmap {
+    height: 350px;
+}
+.photoidx {
+    position: absolute;
+    background-color: white;
+    margin-left: 6px;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 10px;
+    width: 15px;
+    height: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    opacity: 0.4;
+}
+
+.nav a {
+    font-size: 14pt;
+    color: darkblue;
+    text-decoration: none;
+    background: #eef;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.navright {
+    float: right;
+}
+
+.navleft {
+    float: left;
+}
+
+.nav-bottom {
+    margin: 1em 0;
+}
+
+.div-p {
+    margin: 1em 0;
+}
