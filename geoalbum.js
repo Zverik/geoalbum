@@ -1,6 +1,12 @@
 // GeoAlbum.js. Inspired by Tom MacWright's Big, partly based on Weenote, written by Ilya Zverev. Licensed WTFPL.
 
-window.onload = function() {
+var geoAlbumInitialized = false;
+window.onload = function() { initGeoAlbum(); }
+
+function initGeoAlbum() {
+    if( geoAlbumInitialized ) return;
+    geoAlbumInitialized = true;
+
     var prevText = '&larr; Назад';
     var nextText = 'Дальше &rarr;';
     var detailZoom = 15;
@@ -77,7 +83,7 @@ window.onload = function() {
     }
 
     for( var d, count = 0; d = body.firstChild; ) {
-        if( d.nodeType == 1 ) pages[++count] = d;
+        if( d.nodeType == 1 && d.localName != 'script' ) pages[++count] = d;
         body.removeChild(d);
     }
     for( var p in pages ) process(pages[p], p);

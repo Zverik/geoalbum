@@ -9,6 +9,10 @@ h1 {
     font-weight: normal;
 }
 
+img {
+    border: 0;
+}
+
 #content {
     width: 650px;
     float: left;
